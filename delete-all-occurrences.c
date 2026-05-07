@@ -15,6 +15,9 @@ int main()
         // example: [2, 3, 4, 3, 5, 3, 6]
     }
 
+    int deleteValue;
+        scanf("%d", &deleteValue);
+
     // main logic: delete all occurrences of value 3
 
     for (int i = 0; i < n - 1; i++)
@@ -28,7 +31,8 @@ int main()
     because we will access ar[j+1] inside inner loop
     */
     {
-        if (ar[i] == 3)
+        
+        if (ar[i] == deleteValue)
         /*
         check if current element is equal to 3
 
